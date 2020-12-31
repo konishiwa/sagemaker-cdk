@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.81.0",
+    "@aws-cdk/aws-sagemaker": "1.81.0",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
     "jest": "^26.4.2",
@@ -22,6 +23,10 @@
   },
   "dependencies": {
     "@aws-cdk/core": "1.81.0",
-    "source-map-support": "^0.5.16"
+    "@aws-cdk/aws-iam": "1.81.0",
+    "source-map-support": "^0.5.16", 
+    "@aws-cdk/aws-sagemaker": "1.81.0",
+    "@aws-cdk/aws-s3": "1.81.0",
+    "@aws-cdk/aws-s3-deployment": "1.81.0"
   }
 }
