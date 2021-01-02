@@ -34,11 +34,17 @@ Create a Training Set using Sagemaker to determine if a picture is a Chihuahua o
 The infrastructure for the project is as defined below.
 
 ├── README.md <---- This guide to the project.
+
 ├── cdk <---------- Contains CDK code for creating AWS Infrastructure
+
 └──bin  <------------- CDK stack instantiation
+
 └──imgs <------------- Image dataset 
+
 └──lib <-------------- CDK stack definitions
+
 └──test <------------- CDK stack tests
+
 ├── readme_imgs <-- Imgs for README.md
 
 ---
@@ -48,7 +54,7 @@ The infrastructure for the project is as defined below.
 
 `yarn install` installs all needed node_modules
 
-- Deploy the stack by running the command: 
+- Deploy the stack by running the command
 
 `yarn cdk deploy --all --profile <insert profile>` deploys the stack to your AWS account
 
