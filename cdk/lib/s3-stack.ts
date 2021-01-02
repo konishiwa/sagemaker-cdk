@@ -33,7 +33,7 @@ export class S3BucketStack extends cdk.Stack {
     });
 
     new BucketDeployment(this, 'DeployFiles', {
-      sources: [Source.asset('../imgs')], // 'folder' contains your empty files at the right locations
+      sources: [Source.asset('./imgs')], // 'folder' contains your empty files at the right locations
       destinationBucket: this.bucket,
     });
 
