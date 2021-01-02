@@ -4,10 +4,6 @@ import { Bucket, BucketEncryption, HttpMethods, } from '@aws-cdk/aws-s3';
 import {BucketDeployment, Source} from '@aws-cdk/aws-s3-deployment';
 
 export interface S3BucketProps extends cdk.StackProps {
-  /** the path to muffin pictures **/
-  muffinPath: string;
-  /** the path to dog pictures**/
-  dogPath: string;
   /** region **/
   region: string;
   /** account */
@@ -15,7 +11,7 @@ export interface S3BucketProps extends cdk.StackProps {
 
 }
 
-export class S3Bucket extends cdk.Stack {
+export class S3BucketStack extends cdk.Stack {
   public readonly bucket: Bucket;
   constructor(scope: cdk.Construct, id: string, props: S3BucketProps){
      super(scope, id, props);
