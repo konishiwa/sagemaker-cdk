@@ -20,7 +20,8 @@
     "ts-jest": "^26.2.0",
     "aws-cdk": "1.80.0",
     "ts-node": "^9.0.0",
-    "typescript": "~3.9.7"
+    "typescript": "~3.9.7",
+    "prettier": "2.0.5"
   },
   "dependencies": {
     "@aws-cdk/core": "1.80.0",
