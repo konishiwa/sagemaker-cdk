@@ -23,7 +23,7 @@ Create a Training Set using Sagemaker to determine if a picture is a Chihuahua o
 ---
 ### 🏯 Infrastructure
 
-- 3 Bucket with pictures (data set)
+- S3 Bucket with pictures (data set)
 - SageMaker Team 
 - SageMaker Labeling Job
 - SageMaker Training Job
@@ -33,19 +33,19 @@ Create a Training Set using Sagemaker to determine if a picture is a Chihuahua o
 
 The infrastructure for the project is as defined below.
 
-├── README.md <---- This guide to the project.
+> ├── README.md <---- This guide to the project.
 
-├── cdk <---------- Contains CDK code for creating AWS Infrastructure
+> ├── cdk <---------- Contains CDK code for creating AWS Infrastructure
 
-└──bin  <------------- CDK stack instantiation
+> └──bin  <------------- CDK stack instantiation
 
-└──imgs <------------- Image dataset 
+>      └──imgs <------------- Image dataset 
 
-└──lib <-------------- CDK stack definitions
+>      └──lib <-------------- CDK stack definitions
 
-└──test <------------- CDK stack tests
+>      └──test <------------- CDK stack tests
 
-├── readme_imgs <-- Imgs for README.md
+> ├── readme_imgs <-- Imgs for README.md
 
 ---
 ### 👩🏻‍💻 Running the Project
