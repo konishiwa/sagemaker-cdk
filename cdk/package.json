@@ -29,6 +29,7 @@
     "source-map-support": "^0.5.16", 
     "@aws-cdk/aws-sagemaker": "1.80.0",
     "@aws-cdk/aws-s3": "1.80.0",
-    "@aws-cdk/aws-s3-deployment": "1.80.0"
+    "@aws-cdk/aws-s3-deployment": "1.80.0",
+    "@aws-cdk/aws-cloudformation": "1.80.0"
   }
 }
