@@ -1,0 +1,17 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+<crowd-form>
+  <crowd-classifier 
+    name="labels"
+    categories="['dog','muffin']"
+    header='What is the object?'
+  >
+     <classification-target>
+      What type of object is in the photo? Dog or Muffin?
+    </classification-target>
+
+    <full-instructions header="Sentiment Analysis Instructions">
+      Try to determine the object type: Dog or Muffin?
+    </full-instructions>
+
+  </crowd-classifier>
+</crowd-form>

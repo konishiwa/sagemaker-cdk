@@ -8,7 +8,6 @@ export interface S3BucketProps extends cdk.StackProps {
   region: string;
   /** account */
   account: string;
-
 }
 
 export class S3BucketStack extends cdk.Stack {
@@ -33,7 +32,7 @@ export class S3BucketStack extends cdk.Stack {
     });
 
     new BucketDeployment(this, 'DeployFiles', {
-      sources: [Source.asset('./imgs')], // 'folder' contains your empty files at the right locations
+      sources: [Source.asset('./resources/s3/imgs'), Source.asset('./resources/s3/labels')], // 'folder' contains your empty files at the right locations
       destinationBucket: this.bucket,
     });
 
