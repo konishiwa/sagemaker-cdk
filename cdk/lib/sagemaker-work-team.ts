@@ -17,14 +17,14 @@ export class SageMakerWorkerTeamStack extends cdk.Stack {
       });
 
      this.team = new CfnWorkteam(this, 'Default-SageMaker-Labeling-Team', {
-        workteamName: 'Bantha Labeling Team',
-        description: 'Default Labeling Team', 
+        workteamName: 'Bantha-Labeling-Team',
+        description: 'Default-Labeling-Team', 
         memberDefinitions: [
          {
                cognitoMemberDefinition: {
-                  cognitoClientId: '',
-                  cognitoUserGroup: cognitoUserPool.userPoolArn,
-                  cognitoUserPool: ''
+                  cognitoClientId: 'SageMaker-User-Pool',
+                  cognitoUserGroup: 'd-umm_ystring',
+                  cognitoUserPool: 'd-ummy_string',
                }
          }
         ],
